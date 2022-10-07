@@ -21,6 +21,6 @@ def rounding_accuracy(num, d):
     number_in = Decimal(num)
     print(number_in.quantize(Decimal(d)))
 
-number = int(input("Enter a real number: "))
+number = float(input("Enter a real number: "))
 d = input("Enter the required accuracy '0.0001': ")
 rounding_accuracy(number, d)
