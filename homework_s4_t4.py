@@ -37,7 +37,7 @@ def create_str(list_in):
         write = 'x = 0'
     else:
         for i in range(length):
-            if i != new_list[i] == 0: write += f"{choice('+-')} "
+            if i != new_list[i] and new_list[i] == 0: write += f"{choice('+-')} "
             elif i != length - 1 and new_list[i] != 0 and i != length - 2:
                 write += f'{new_list[i]}x^{length-i-1} '
                 if new_list[i+1] != 0 and new_list[i] > 0: write += f"{choice('+-')} "
